@@ -1,9 +1,9 @@
-const Main = require('./main').default
+import Main from './main'
 
 
 
 
-module.exports = app => {
-  app.use('/Main', Main)
+export default app => {
+  app.use('/login', Main)
   
 }

@@ -9,7 +9,7 @@ serializeUser((user, done) => {
 
 deserializeUser((id, done) => {
   console.log('registar made it', id)
-  query('SELECT * FROM person WHERE id = $1', [id]).then((result) => {
+  query('SELECT * FROM Auth.User WHERE Id = $1', [id]).then((result) => {
     
     const user = result && result.rows && result.rows[0];
 

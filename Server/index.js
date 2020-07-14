@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const port = 5000
 const { Client } = require('pg')
-const mountRoutes = require('./Routes')
+const mountRoutes = require('./Routes').default
 const cors = require('cors')
 //const { Client } = require('pg');
 
